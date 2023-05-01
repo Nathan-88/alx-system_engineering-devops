@@ -6,6 +6,10 @@ sudo apt-get install -y nginx
 
 # Create custom 404 error page
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+# code to redirect a specific endpoint (eg: redirect /redirect_me to https://divinelewis.tech)
+echo "Hello World!" | sudo tee /var/www/html/index.html
+string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/weblegend.tech permanent;"
+sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 
 # Configure Nginx to use custom 404 page
 sudo sed -i "s|#error_page 404 /404.html;|error_page 404 /404.html;|" /etc/nginx/sites-enabled/default
