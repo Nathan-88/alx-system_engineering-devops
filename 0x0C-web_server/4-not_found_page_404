@@ -17,4 +17,4 @@ sudo sed -i "s|#location = /404.html {|location = /404.html {|" /etc/nginx/sites
 sudo sed -i "s|#}#end of error_page|}#end of error_page|" /etc/nginx/sites-enabled/default
 
 # Restart Nginx service to apply changes
-sudo service restart nginx
+sudo service nginx restart
