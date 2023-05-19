@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # fix container:: task 2
 pkill -f apache2
 chmod 644 /etc/nginx/nginx.conf
