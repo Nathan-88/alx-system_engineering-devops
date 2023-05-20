@@ -9,15 +9,15 @@ sudo add-apt-repository -y ppa:vbernat/haproxy-2.4
 sudo apt-get -y install haproxy
 
 # the load balancer's configuration
-DOMAIN_NAME='divinelewis.tech'
+DOMAIN_NAME='weblegend.tech'
 
 HAPROXY_LB_CONFIG=\
 "
 #--$DOMAIN_NAME-params-begin--
 backend $DOMAIN_NAME-backend
         balance roundrobin
-        server 173867-web-01 52.91.145.188 check
-        server 173867-web-02 100.25.137.235 check
+        server 176087-web-01 100.26.163.137 check
+        server 176087-web-02 35.175.104.32 check
 frontend $DOMAIN_NAME-frontend
         bind *:80
         mode http
