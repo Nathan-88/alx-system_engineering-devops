@@ -6,14 +6,14 @@ sudo apt-get update
 sudo apt-get -y install haproxy
 
 # the load balancer's configuration
-DOMAIN_NAME='www.weblegend.tech'
+DOMAIN_NAME='weblegendtech'
 
 server_config=\
 "
 backend $DOMAIN_NAME-backend
         balance roundrobin
-        server 176087-web-01 34.232.52.184 check
-        server 176087-web-02 35.153.19.183 check
+        server 176087-web-01 34.232.52.184
+        server 176087-web-02 35.153.19.183
 frontend $DOMAIN_NAME-frontend
         bind *:80
         mode http
