@@ -13,9 +13,9 @@ server_config=\
 backend $DOMAIN_NAME-backend
         balance roundrobin
         server 176087-web-01 34.232.52.184
-        server 176087-web-02 35.153.19.183
+        server 176087-web-02 54.173.163.73
 frontend $DOMAIN_NAME-frontend
-        bind *:80
+        bind :80
         mode http
         default_backend $DOMAIN_NAME-backend
 "
