@@ -2,9 +2,8 @@
 """
 export data in the CSV format.
 """
-
-import sys
 import csv
+import sys
 import requests
 
 if __name__ == "__main__":
