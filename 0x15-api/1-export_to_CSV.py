@@ -2,6 +2,7 @@
 """
 export data in the CSV format.
 """
+
 import sys
 import csv
 import requests
@@ -12,7 +13,7 @@ if __name__ == "__main__":
     url = baseUrl + "/" + USER_ID
 
     response = requests.get(url)
-    USERNAME = response.json().get('name')
+    USERNAME = response.json().get('username')
 
     todoUrl = url + "/todos"
     response = requests.get(todoUrl)
