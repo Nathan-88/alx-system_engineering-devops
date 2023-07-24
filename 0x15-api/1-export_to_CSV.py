@@ -3,8 +3,8 @@
 export data in the CSV format.
 """
 import csv
-import sys
 import requests
+import sys
 
 if __name__ == "__main__":
     USER_ID = sys.argv[1]
