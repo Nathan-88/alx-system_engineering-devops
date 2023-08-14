@@ -1,7 +1,7 @@
 # 0x19-postmortem
 ![I WILL FIND YOU AND I WILL FIX YOU](https://miro.medium.com/max/1400/0*kHoWD7gJ0PC9GmBK.jpg)
 # Issue Summary
-16/02/2022 From 9:15 AM to 10:00 AM UTC+1 all requests for the homepage to our servers got a 404 response
+11/08/2023 From 9:15 AM to 10:00 AM UTC+1 all requests for the homepage to our servers got a 404 response
 
 # Timeline
 - 9:10 AM : Updates push
